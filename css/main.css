@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kalam', cursive;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.card {
+  height: 14vh;
+  width: 14%;
+  border: 1px solid #444444;
+  margin: 1vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.austria {
+  background-image: url("../images/austria.png");
+}
+.belgium {
+  background-image: url("../images/belgium.png");
+}
+.germany {
+  background-image: url("../images/germany.png");
+}
+.poland {
+  background-image: url("../images/poland.png");
+}
+.italy {
+  background-image: url("../images/italy.png");
+}
+.spain {
+  background-image: url("../images/spain.png");
+}
+.sweden {
+  background-image: url("../images/sweden.png");
+}
+.portugal {
+  background-image: url("../images/portugal.png");
+}
+.greece {
+  background-image: url("../images/greece.png");
+}
+.uk {
+  background-image: url("../images/uk.png");
+}
+.slovakia {
+  background-image: url("../images/slovakia.png");
+}
+.malta {
+  background-image: url("../images/malta.png");
+}
+.finland {
+  background-image: url("../images/finland.png");
+}
+.croatia {
+  background-image: url("../images/croatia.png");
+}
+
+.off {
+  opacity: 0.2;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #ccc;
+  border: 1px solid #444444;
+}
+
+.cover {
+  background-image: url("../images/map-306920_960_720.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #ccc;
+  border: none;
+  transition: 0.6s;
+}
+
+.cover:hover {
+  cursor: pointer;
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.cover:active {
+}
+
+.header {
+  height: 90px;
+  padding: 20px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.board p {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 4em;
+}
+
+.moves {
+  padding-left: 40px;
+}
+
+.timer {
+  padding-right: 40px;
+}
+
+.start-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 13450px) {
+  .container {
+    width: 90%;
+
+  }
+  card {
+    height: 10vh;
+    width: 18vh;
+  }
+}
