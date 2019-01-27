@@ -9,8 +9,32 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
+}
+
+.header {
+  height: 90px;
+  padding: 20px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moves {
+  padding-left: 40px;
+}
+
+.start-btn {
+  cursor: pointer;
+}
+
+.timer {
+  padding-right: 40px;
 }
 
 .board {
@@ -20,17 +44,6 @@ body {
   flex-wrap: wrap;
   margin-top: 30px;
   width: 100%;
-}
-
-.card {
-  height: 14vh;
-  width: 14%;
-  border: 1px solid #444444;
-  margin: 1vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .austria {
@@ -76,6 +89,17 @@ body {
   background-image: url("../images/croatia.png");
 }
 
+.card {
+  height: 6em;
+  width: 9.7em;
+  border: 1px solid #444444;
+  margin: 1vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
 .off {
   opacity: 0.2;
   border-radius: 5px;
@@ -99,21 +123,6 @@ body {
   transform: scale3d(1.1, 1.1, 1.1);
 }
 
-.cover:active {
-}
-
-.header {
-  height: 90px;
-  padding: 20px;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 p {
   font-size: 2em;
   font-weight: bold;
@@ -123,28 +132,38 @@ p {
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
-.moves {
-  padding-left: 40px;
-}
-
-.timer {
-  padding-right: 40px;
-}
-
-.start-btn {
-  cursor: pointer;
-}
-
-@media (max-width: 13450px) {
-  .container {
-    width: 90%;
-
+@media screen and (min-width: 768px){
+  .card {
+    height: 6.6em;
+    width: 10.5em;
   }
-  card {
-    height: 10vh;
-    width: 18vh;
+  .board p {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  .card {
+    height: 7.2em;
+    width: 11.6em;
+  }
+  .board p {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .card {
+    height: 8em;
+    width: 13em;
+  }
+  p{
+    font-size: 2.5em;
+  }
+  .board p {
+    font-size: 4em;
   }
 }
