@@ -9,4 +9,7 @@ Project is created with: HTML, CSS3 and JavaScript.
 Match all flags in the shortest time with minimum number of moves.
 
 ## Demo:
-https://martynamas.github.io/Memory_Game/
+
+[Memory Game][memory]
+
+[memory]: https://martynamas.github.io/Memory_Game/
